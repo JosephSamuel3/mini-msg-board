@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Message - Mini message board</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <%- include("navbar") %>
+    <div class="content">
+        <h1>Write a new message</h1>
+        <form action="/new" method="POST" class="message-form">
+            <label for="user">Name</label>
+            <input id="user" name="user" type="text" required>
+
+            <label for="text">Message</label>
+            <textarea id="text" name="text" rows="4" required></textarea>
+
+            <button type="submit">Submit message</button>
+        </form>
+    </div>
+</body>
+</html>
